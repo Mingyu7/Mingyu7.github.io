@@ -36,7 +36,9 @@ redirect_from:
     padding: 20px; 
     border-radius: 15px; 
     margin: 20px 0;
-    border: 2px solid #4facfe;
+    border: 2px solid #00d4ff;
+    background: rgba(0, 212, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
   }
   
   .hero-badge p {
@@ -47,10 +49,10 @@ redirect_from:
   .intro-section {
     padding: 30px; 
     border-radius: 15px; 
-    border-left: 5px solid #4facfe; 
+    border-left: 5px solid #00d4ff; 
     margin: 25px 0;
-    border: 3px solid #4facfe;
-    background: rgba(79, 172, 254, 0.05);
+    border: 3px solid #00d4ff;
+    background: rgba(0, 212, 255, 0.08);
     box-shadow: 0 0 20px rgba(79, 172, 254, 0.15);
     position: relative;
     z-index: 1;
@@ -76,8 +78,8 @@ redirect_from:
     padding: 30px; 
     border-radius: 15px; 
     margin: 20px 0;
-    border: 3px solid #667eea;
-    background: rgba(102, 126, 234, 0.05);
+    border: 3px solid #8b5cf6;
+    background: rgba(139, 92, 246, 0.08);
     box-shadow: 0 0 20px rgba(102, 126, 234, 0.15);
     position: relative;
     z-index: 1;
@@ -104,7 +106,7 @@ redirect_from:
   
   .education-section li:hover {
     transform: translateX(5px);
-    border-left: 3px solid #4facfe;
+    border-left: 3px solid #00d4ff;
   }
   
   /* 자격증 카드 스타일 - 파티클 효과와 조화 */
@@ -119,7 +121,7 @@ redirect_from:
     padding: 25px; 
     border-radius: 15px; 
     border-left: 4px solid;
-    border: 2px solid #667eea;
+    border: 2px solid #8b5cf6;
     background: rgba(102, 126, 234, 0.03);
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
     transition: all 0.3s ease;
@@ -153,8 +155,8 @@ redirect_from:
     padding: 30px; 
     border-radius: 15px; 
     margin: 25px 0;
-    border: 3px solid #4facfe;
-    background: rgba(79, 172, 254, 0.05);
+    border: 3px solid #00d4ff;
+    background: rgba(0, 212, 255, 0.08);
     position: relative;
     z-index: 1;
     box-shadow: 0 0 20px rgba(79, 172, 254, 0.2);
@@ -169,15 +171,15 @@ redirect_from:
   .tech-category {
     padding: 25px;
     border-radius: 12px;
-    border: 2px solid #667eea;
-    background: rgba(102, 126, 234, 0.05);
+    border: 2px solid #8b5cf6;
+    background: rgba(139, 92, 246, 0.08);
     transition: all 0.3s ease;
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.1);
   }
   
   .tech-category:hover {
     transform: translateY(-5px);
-    border-color: #4facfe;
+    border-color: #00d4ff;
     box-shadow: 0 8px 25px rgba(79, 172, 254, 0.2);
     background: rgba(79, 172, 254, 0.08);
   }
@@ -190,7 +192,7 @@ redirect_from:
   
   .tech-category h4 {
     color: #ffffff !important; 
-    border-bottom: 2px solid #4facfe; 
+    border-bottom: 2px solid #00d4ff; 
     padding-bottom: 8px;
     margin-bottom: 15px;
   }
@@ -211,7 +213,7 @@ redirect_from:
   }
   
   .tech-category li:hover {
-    color: #4facfe !important;
+    color: #00d4ff !important;
     transform: translateX(3px);
   }
   
@@ -390,21 +392,21 @@ redirect_from:
 
 ## 🏅 취득 자격증
 <div class="cert-grid">
-  <div class="cert-card" style="color: #ffd54f; border-left-color: #ffc107;">
-    <h4>💼 정보처리기사</h4>
-    <p>시스템 개발 및 소프트웨어 엔지니어링 전문성</p>
+  <div class="cert-card" style="color: #00d4ff; border-left-color: #00d4ff;">
+    <h4 style="color: #00d4ff;">💼 정보처리기사</h4>
+    <p style="color: #f0f0f0;">시스템 개발 및 소프트웨어 엔지니어링 전문성</p>
   </div>
-  <div class="cert-card" style="color: #81c784; border-left-color: #28a745;">
-    <h4>📊 컴퓨터활용능력 2급</h4>
-    <p>데이터 처리 및 분석 역량</p>
+  <div class="cert-card" style="color: #10b981; border-left-color: #10b981;">
+    <h4 style="color: #10b981;">📊 컴퓨터활용능력 2급</h4>
+    <p style="color: #f0f0f0;">데이터 처리 및 분석 역량</p>
   </div>
-  <div class="cert-card" style="color: #64b5f6; border-left-color: #007bff;">
-    <h4>⚙️ 정보처리기능사</h4>
-    <p>프로그래밍 및 시스템 운영 기초</p>
+  <div class="cert-card" style="color: #8b5cf6; border-left-color: #8b5cf6;">
+    <h4 style="color: #8b5cf6;">⚙️ 정보처리기능사</h4>
+    <p style="color: #f0f0f0;">프로그래밍 및 시스템 운영 기초</p>
   </div>
-  <div class="cert-card" style="color: #e57373; border-left-color: #dc3545;">
-    <h4>📝 워드프로세서</h4>
-    <p>문서 작성 및 편집 능력</p>
+  <div class="cert-card" style="color: #ec4899; border-left-color: #ec4899;">
+    <h4 style="color: #ec4899;">📝 워드프로세서</h4>
+    <p style="color: #f0f0f0;">문서 작성 및 편집 능력</p>
   </div>
 </div>
 
@@ -449,26 +451,26 @@ redirect_from:
 
 ## 🚀 핵심 역량
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 25px 0;">
-  <div class="core-skill" style="color: #ffffff; padding: 25px; border-radius: 15px; text-align: center; border: 3px solid #667eea; background: rgba(102, 126, 234, 0.05); box-shadow: 0 4px 20px rgba(102, 126, 234, 0.2); transition: all 0.3s ease;">
-    <h4 style="margin: 0 0 15px 0; font-size: 1.4em; color: #667eea; text-shadow: 0 0 10px rgba(102, 126, 234, 0.3);">🎯 성실함과 끈기</h4>
+  <div class="core-skill" style="color: #ffffff; padding: 25px; border-radius: 15px; text-align: center; border: 3px solid #8b5cf6; background: rgba(139, 92, 246, 0.08); box-shadow: 0 4px 20px rgba(102, 126, 234, 0.2); transition: all 0.3s ease;">
+    <h4 style="margin: 0 0 15px 0; font-size: 1.4em; color: #8b5cf6; text-shadow: 0 0 10px rgba(102, 126, 234, 0.3);">🎯 성실함과 끈기</h4>
     <p style="margin: 0; font-size: 1.1em;">게으르지 않고 꾸준히 학습하며 평균학점 4.3으로 증명된 성실성</p>
   </div>
-  <div class="core-skill" style="color: #ffffff; padding: 25px; border-radius: 15px; text-align: center; border: 3px solid #f093fb; background: rgba(240, 147, 251, 0.05); box-shadow: 0 4px 20px rgba(240, 147, 251, 0.2); transition: all 0.3s ease;">
-    <h4 style="margin: 0 0 15px 0; font-size: 1.4em; color: #f093fb; text-shadow: 0 0 10px rgba(240, 147, 251, 0.3);">🧠 문제 해결 능력</h4>
+  <div class="core-skill" style="color: #ffffff; padding: 25px; border-radius: 15px; text-align: center; border: 3px solid #ec4899; background: rgba(236, 72, 153, 0.08); box-shadow: 0 4px 20px rgba(240, 147, 251, 0.2); transition: all 0.3s ease;">
+    <h4 style="margin: 0 0 15px 0; font-size: 1.4em; color: #ec4899; text-shadow: 0 0 10px rgba(240, 147, 251, 0.3);">🧠 문제 해결 능력</h4>
     <p style="margin: 0; font-size: 1.1em;">복잡한 문제를 논리적으로 분석하고 300+ 알고리즘 문제 해결</p>
   </div>
-  <div class="core-skill" style="color: #ffffff; padding: 25px; border-radius: 15px; text-align: center; border: 3px solid #4facfe; background: rgba(79, 172, 254, 0.05); box-shadow: 0 4px 20px rgba(79, 172, 254, 0.2); transition: all 0.3s ease;">
-    <h4 style="margin: 0 0 15px 0; font-size: 1.4em; color: #4facfe; text-shadow: 0 0 10px rgba(79, 172, 254, 0.3);">📚 지속적 학습</h4>
+  <div class="core-skill" style="color: #ffffff; padding: 25px; border-radius: 15px; text-align: center; border: 3px solid #00d4ff; background: rgba(0, 212, 255, 0.08); box-shadow: 0 4px 20px rgba(79, 172, 254, 0.2); transition: all 0.3s ease;">
+    <h4 style="margin: 0 0 15px 0; font-size: 1.4em; color: #00d4ff; text-shadow: 0 0 10px rgba(79, 172, 254, 0.3);">📚 지속적 학습</h4>
     <p style="margin: 0; font-size: 1.1em;">새로운 기술 습득에 대한 열정과 트렌드 기술 학습</p>
   </div>
-  <div class="core-skill" style="color: #ffffff; padding: 25px; border-radius: 15px; text-align: center; border: 3px solid #fa709a; background: rgba(250, 112, 154, 0.05); box-shadow: 0 4px 20px rgba(250, 112, 154, 0.2); transition: all 0.3s ease;">
-    <h4 style="margin: 0 0 15px 0; font-size: 1.4em; color: #fa709a; text-shadow: 0 0 10px rgba(250, 112, 154, 0.3);">🤝 협업과 실무</h4>
+  <div class="core-skill" style="color: #ffffff; padding: 25px; border-radius: 15px; text-align: center; border: 3px solid #10b981; background: rgba(16, 185, 129, 0.08); box-shadow: 0 4px 20px rgba(250, 112, 154, 0.2); transition: all 0.3s ease;">
+    <h4 style="margin: 0 0 15px 0; font-size: 1.4em; color: #10b981; text-shadow: 0 0 10px rgba(250, 112, 154, 0.3);">🤝 협업과 실무</h4>
     <p style="margin: 0; font-size: 1.1em;">이론을 실제 프로젝트에 적용하고 팀워크를 통한 성과 달성</p>
   </div>
 </div>
 
-<div style="text-align: center; margin: 40px 0; padding: 40px; color: #ffffff; border-radius: 20px; border: 4px solid #667eea; background: rgba(102, 126, 234, 0.08); box-shadow: 0 0 30px rgba(102, 126, 234, 0.3);">
-  <h3 style="margin: 0 0 20px 0; font-size: 1.6em; color: #667eea; text-shadow: 0 0 15px rgba(102, 126, 234, 0.4);">💫 나의 목표</h3>
+<div style="text-align: center; margin: 40px 0; padding: 40px; color: #ffffff; border-radius: 20px; border: 4px solid #8b5cf6; background: rgba(102, 126, 234, 0.08); box-shadow: 0 0 30px rgba(102, 126, 234, 0.3);">
+  <h3 style="margin: 0 0 20px 0; font-size: 1.6em; color: #8b5cf6; text-shadow: 0 0 15px rgba(102, 126, 234, 0.4);">💫 나의 목표</h3>
   <p style="font-size: 1.3em; margin: 0; color: #f0f0f0; text-shadow: 0 0 5px rgba(255, 255, 255, 0.2); line-height: 1.4;">
     <em>"성실함과 끊임없는 학습으로 가치 있는 소프트웨어를 만들어가겠습니다!"</em>
   </p>
