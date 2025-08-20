@@ -16,7 +16,7 @@ class ParticleSystem {
     this.canvas.style.position = 'fixed';
     this.canvas.style.top = '0';
     this.canvas.style.left = '0';
-    this.canvas.style.zIndex = '-1';
+    this.canvas.style.zIndex = '10';
     this.canvas.style.pointerEvents = 'none';
     this.canvas.style.width = '300px';
     this.canvas.style.height = '100vh';

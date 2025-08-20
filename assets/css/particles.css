@@ -5,7 +5,7 @@
   left: 0;
   width: 300px;
   height: 100vh;
-  z-index: -1;
+  z-index: 10;
   pointer-events: none;
   background: linear-gradient(135deg, 
     rgba(102, 126, 234, 0.15) 0%, 
@@ -32,7 +32,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -2;
+  z-index: 5;
   pointer-events: none;
   overflow: hidden;
 }
@@ -99,6 +99,45 @@
 .floating-shapes {
   width: 300px;
   height: 100%;
+}
+
+/* 메인 컨텐츠가 파티클 위에 표시되도록 */
+.page__content,
+.masthead,
+.page__footer,
+main,
+article {
+  position: relative;
+  z-index: 20;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+/* 다크모드에서 메인 컨텐츠 배경 */
+@media (prefers-color-scheme: dark) {
+  .page__content,
+  .masthead,
+  .page__footer,
+  main,
+  article {
+    background: rgba(18, 18, 18, 0.95);
+  }
+}
+
+/* 사이드바도 파티클 위에 표시 */
+.sidebar {
+  position: relative;
+  z-index: 25;
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(15px);
+  border-radius: 0 15px 15px 0;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .sidebar {
+    background: rgba(25, 25, 25, 0.98);
+  }
 }
 
 @keyframes float {

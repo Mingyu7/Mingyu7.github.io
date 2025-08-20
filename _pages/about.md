@@ -19,7 +19,7 @@ redirect_from:
   .hero-title {
     font-size: 2.5em; 
     margin-bottom: 10px;
-    color: #2c3e50 !important;
+    color: #1a1a1a !important;
     text-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
     transition: all 0.3s ease;
   }
