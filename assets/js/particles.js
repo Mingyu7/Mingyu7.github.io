@@ -18,13 +18,15 @@ class ParticleSystem {
     this.canvas.style.left = '0';
     this.canvas.style.zIndex = '-1';
     this.canvas.style.pointerEvents = 'none';
-    // 파티클을 왼쪽 세로 띠로 제한 (더 두껍게)
-    this.canvas.style.width = '300px'; // 고정 너비 300px로 두껍게
-    this.canvas.style.height = '100%';
+    this.canvas.style.width = '300px';
+    this.canvas.style.height = '100vh';
     document.body.insertBefore(this.canvas, document.body.firstChild);
     
     this.ctx = this.canvas.getContext('2d');
     this.resize();
+    
+    // 다크모드 여부 감지
+    this.isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
     // 파티클 생성
     this.createParticles();
@@ -32,6 +34,12 @@ class ParticleSystem {
     // 이벤트 리스너
     window.addEventListener('resize', () => this.resize());
     window.addEventListener('mousemove', (e) => this.updateMouse(e));
+    
+    // 다크모드 변경 감지
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+      this.isDarkMode = e.matches;
+      this.createParticles(); // 파티클 색상 재설정
+    });
     
     // 애니메이션 시작
     this.animate();
@@ -53,16 +61,17 @@ class ParticleSystem {
   }
 
   createParticles() {
-    const particleCount = 80; // 더 많은 파티클로 조밀하게
+    this.particles = []; // 기존 파티클 초기화
+    const particleCount = 120; // 더 많은 파티클로 조밀하게
     
     for (let i = 0; i < particleCount; i++) {
       this.particles.push({
         x: Math.random() * 300, // 300px 너비 내에서
-        y: Math.random() * this.canvas.height,
-        vx: (Math.random() - 0.5) * 0.3,
-        vy: (Math.random() - 0.5) * 0.3,
-        size: Math.random() * 4 + 2, // 조금 더 크게
-        opacity: Math.random() * 0.7 + 0.3,
+        y: Math.random() * window.innerHeight,
+        vx: (Math.random() - 0.5) * 0.4,
+        vy: (Math.random() - 0.5) * 0.4,
+        size: Math.random() * 5 + 2, // 더 크게
+        opacity: Math.random() * 0.8 + 0.4,
         color: this.getRandomColor(),
         originalSize: 0,
         pulse: Math.random() * Math.PI * 2
@@ -76,14 +85,29 @@ class ParticleSystem {
   }
 
   getRandomColor() {
-    const colors = [
-      'rgba(102, 126, 234, 0.6)',
-      'rgba(118, 75, 162, 0.6)',
-      'rgba(52, 152, 219, 0.6)',
-      'rgba(155, 89, 182, 0.6)',
-      'rgba(46, 204, 113, 0.6)'
-    ];
-    return colors[Math.floor(Math.random() * colors.length)];
+    if (this.isDarkMode) {
+      // 다크모드 색상
+      const darkColors = [
+        'rgba(102, 126, 234, 0.7)',
+        'rgba(118, 75, 162, 0.7)',
+        'rgba(52, 152, 219, 0.7)',
+        'rgba(155, 89, 182, 0.7)',
+        'rgba(46, 204, 113, 0.7)'
+      ];
+      return darkColors[Math.floor(Math.random() * darkColors.length)];
+    } else {
+      // 라이트모드 색상 (더 진하고 선명하게)
+      const lightColors = [
+        'rgba(63, 81, 181, 0.9)',
+        'rgba(156, 39, 176, 0.9)',
+        'rgba(33, 150, 243, 0.9)',
+        'rgba(103, 58, 183, 0.9)',
+        'rgba(0, 150, 136, 0.9)',
+        'rgba(255, 87, 34, 0.8)',
+        'rgba(255, 152, 0, 0.8)'
+      ];
+      return lightColors[Math.floor(Math.random() * lightColors.length)];
+    }
   }
 
   updateMouse(event) {
@@ -107,9 +131,17 @@ class ParticleSystem {
 
   drawBackground() {
     const gradient = this.ctx.createLinearGradient(0, 0, this.canvas.width, this.canvas.height);
-    gradient.addColorStop(0, 'rgba(102, 126, 234, 0.02)');
-    gradient.addColorStop(0.5, 'rgba(118, 75, 162, 0.02)');
-    gradient.addColorStop(1, 'rgba(52, 152, 219, 0.02)');
+    
+    if (this.isDarkMode) {
+      gradient.addColorStop(0, 'rgba(102, 126, 234, 0.03)');
+      gradient.addColorStop(0.5, 'rgba(118, 75, 162, 0.03)');
+      gradient.addColorStop(1, 'rgba(52, 152, 219, 0.03)');
+    } else {
+      gradient.addColorStop(0, 'rgba(63, 81, 181, 0.08)');
+      gradient.addColorStop(0.3, 'rgba(156, 39, 176, 0.08)');
+      gradient.addColorStop(0.6, 'rgba(33, 150, 243, 0.08)');
+      gradient.addColorStop(1, 'rgba(0, 150, 136, 0.08)');
+    }
     
     this.ctx.fillStyle = gradient;
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
@@ -183,11 +215,17 @@ class ParticleSystem {
         const dy = this.particles[i].y - this.particles[j].y;
         const distance = Math.sqrt(dx * dx + dy * dy);
         
-        if (distance < 80) {
+        if (distance < 100) {
           this.ctx.save();
-          this.ctx.globalAlpha = (80 - distance) / 80 * 0.3;
-          this.ctx.strokeStyle = 'rgba(102, 126, 234, 0.5)';
-          this.ctx.lineWidth = 0.5;
+          this.ctx.globalAlpha = (100 - distance) / 100 * 0.4;
+          
+          if (this.isDarkMode) {
+            this.ctx.strokeStyle = 'rgba(102, 126, 234, 0.6)';
+          } else {
+            this.ctx.strokeStyle = 'rgba(63, 81, 181, 0.7)';
+          }
+          
+          this.ctx.lineWidth = 1;
           this.ctx.beginPath();
           this.ctx.moveTo(this.particles[i].x, this.particles[i].y);
           this.ctx.lineTo(this.particles[j].x, this.particles[j].y);
