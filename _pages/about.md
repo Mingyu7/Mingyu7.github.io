@@ -145,6 +145,11 @@ redirect_from:
   .cert-card h4 {
     margin-bottom: 10px;
     font-size: 1.2em;
+    color: #1a1a1a !important;
+  }
+  
+  .cert-card p {
+    color: #2c3e50 !important;
   }
   
   /* 기술 스택 스타일 - 파티클 효과와 조화 */
@@ -207,7 +212,7 @@ redirect_from:
   
   /* 섹션 제목 라이트 모드 */
   h2 {
-    color: #2c3e50 !important;
+    color: #1a1a1a !important;
   }
   
   /* 다크모드 전용 스타일 */
@@ -286,6 +291,11 @@ redirect_from:
     /* 섹션 제목 다크모드 */
     h2 {
       color: #e8e8e8 !important;
+    }
+    
+    /* 자격증 카드 제목들 다크모드에서만 밝게 */
+    .cert-card h4 {
+      color: inherit !important;
     }
     
     /* 자격증 카드 다크모드 색상 */
