@@ -1,10 +1,9 @@
 /* 전체 사이트 라이트/다크 모드 대응 */
 
-/* 라이트 모드 - 어두운 글자와 강한 대비 */
+/* 라이트 모드 - 깔끔한 어두운 글자 */
 h1, h2, h3, h4, h5, h6 {
   color: #1a202c !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 .page__content h1,
@@ -26,8 +25,7 @@ main h4,
 main h5,
 main h6 {
   color: #1a202c !important;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
-  font-weight: 700 !important;
+  font-weight: 600 !important;
 }
 
 .page__content,
@@ -36,25 +34,24 @@ main p,
 main li,
 main span {
   color: #2d3748 !important;
-  font-weight: 500 !important;
+  font-weight: 400 !important;
 }
 
 /* 링크 색상 - 라이트 모드 */
 a {
   color: #0066cc !important;
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
 
 a:hover {
   color: #004499 !important;
 }
 
-/* 다크 모드 - 밝은 글자와 글로우 효과 */
+/* 다크 모드 - 깔끔한 밝은 글자 */
 @media (prefers-color-scheme: dark) {
   h1, h2, h3, h4, h5, h6 {
     color: #ffffff !important;
-    text-shadow: 0 0 15px rgba(0, 212, 255, 0.4), 0 0 30px rgba(0, 212, 255, 0.2) !important;
-    font-weight: 800 !important;
+    font-weight: 600 !important;
   }
 
   .page__content h1,
@@ -76,8 +73,7 @@ a:hover {
   main h5,
   main h6 {
     color: #ffffff !important;
-    text-shadow: 0 0 15px rgba(0, 212, 255, 0.4), 0 0 30px rgba(0, 212, 255, 0.2) !important;
-    font-weight: 800 !important;
+    font-weight: 600 !important;
   }
 
   .page__content,
@@ -86,19 +82,31 @@ a:hover {
   main li,
   main span {
     color: #e2e8f0 !important;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.1) !important;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
   }
 
   /* 다크모드 링크 색상 */
   a {
-    color: #00d4ff !important;
-    text-shadow: 0 0 10px rgba(0, 212, 255, 0.3) !important;
-    font-weight: 600 !important;
+    color: #60a5fa !important;
+    font-weight: 500 !important;
   }
 
   a:hover {
-    color: #10b981 !important;
-    text-shadow: 0 0 15px rgba(16, 185, 129, 0.4) !important;
+    color: #3b82f6 !important;
   }
+}
+
+/* 상단바 항상 흰색 배경 */
+.masthead {
+  background: #ffffff !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+}
+
+.masthead a {
+  color: #1a202c !important;
+  font-weight: 500 !important;
+}
+
+.masthead a:hover {
+  color: #0066cc !important;
 }
