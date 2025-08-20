@@ -14,12 +14,12 @@ class ParticleSystem {
     this.canvas = document.createElement('canvas');
     this.canvas.id = 'particles-canvas';
     this.canvas.style.position = 'fixed';
-    this.canvas.style.top = '0';
+    this.canvas.style.top = '80px';
     this.canvas.style.left = '0';
     this.canvas.style.zIndex = '10';
     this.canvas.style.pointerEvents = 'none';
     this.canvas.style.width = '300px';
-    this.canvas.style.height = '100vh';
+    this.canvas.style.height = 'calc(100vh - 80px)';
     document.body.insertBefore(this.canvas, document.body.firstChild);
     
     this.ctx = this.canvas.getContext('2d');
@@ -55,9 +55,9 @@ class ParticleSystem {
   }
 
   resize() {
-    // 고정 너비 300px, 전체 높이
+    // 고정 너비 300px, 메뉴바 제외한 높이
     this.canvas.width = 300;
-    this.canvas.height = window.innerHeight;
+    this.canvas.height = window.innerHeight - 80;
   }
 
   createParticles() {
@@ -67,7 +67,7 @@ class ParticleSystem {
     for (let i = 0; i < particleCount; i++) {
       this.particles.push({
         x: Math.random() * 300, // 300px 너비 내에서
-        y: Math.random() * window.innerHeight,
+        y: Math.random() * (window.innerHeight - 80), // 메뉴바 제외한 높이
         vx: (Math.random() - 0.5) * 0.4,
         vy: (Math.random() - 0.5) * 0.4,
         size: Math.random() * 5 + 2, // 더 크게
@@ -178,14 +178,14 @@ class ParticleSystem {
       particle.vx *= 0.99;
       particle.vy *= 0.99;
       
-      // 경계 처리 (300px 너비 내에서)
+      // 경계 처리 (300px 너비, 메뉴바 제외한 높이)
       if (particle.x < 0 || particle.x > 300) {
         particle.vx = -particle.vx;
         particle.x = Math.max(0, Math.min(300, particle.x));
       }
-      if (particle.y < 0 || particle.y > this.canvas.height) {
+      if (particle.y < 0 || particle.y > (window.innerHeight - 80)) {
         particle.vy = -particle.vy;
-        particle.y = Math.max(0, Math.min(this.canvas.height, particle.y));
+        particle.y = Math.max(0, Math.min(window.innerHeight - 80, particle.y));
       }
     });
   }
