@@ -4,6 +4,15 @@ excerpt: "학생들의 학습 진도를 관리할 수 있는 웹 애플리케이
 collection: portfolio
 ---
 
+<div class="portfolio-image-placeholder">
+  <div class="portfolio-image-container">
+    <div class="portfolio-image-text">
+      <p>🖼️ 프로젝트 이미지</p>
+      <p>이미지를 추가해주세요</p>
+    </div>
+  </div>
+</div>
+
 ## 프로젝트 개요
 팀 프로젝트로 진행한 웹 기반 학습 관리 시스템(LMS) 개발 프로젝트입니다.
 

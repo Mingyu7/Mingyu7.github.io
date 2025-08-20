@@ -195,70 +195,136 @@ redirect_from:
   /* 다크모드 전용 스타일 */
   @media (prefers-color-scheme: dark) {
     .hero-title {
-      color: #e8e8e8;
+      color: #e8e8e8 !important;
     }
     
     .hero-subtitle {
-      color: #64b5f6;
+      color: #64b5f6 !important;
     }
     
     .intro-section {
-      background-color: rgba(45, 45, 45, 0.8);
-      border-left-color: #64b5f6;
+      background: rgba(45, 45, 45, 0.9) !important;
+      border-left-color: #64b5f6 !important;
     }
     
     .intro-section h3 {
-      color: #e8e8e8;
+      color: #e8e8e8 !important;
     }
     
     .intro-section p {
-      color: #e8e8e8;
+      color: #e8e8e8 !important;
+    }
+    
+    .intro-section p strong {
+      color: #ffffff !important;
     }
     
     .education-section {
-      background-color: rgba(45, 65, 45, 0.8);
+      background: rgba(45, 65, 45, 0.9) !important;
     }
     
     .education-section li {
-      color: #e8e8e8;
+      color: #e8e8e8 !important;
+      background: rgba(255, 255, 255, 0.1) !important;
+    }
+    
+    .education-section li strong {
+      color: #ffffff !important;
+    }
+    
+    .education-section li:hover {
+      background: rgba(255, 255, 255, 0.2) !important;
     }
     
     .tech-section {
-      background-color: rgba(40, 40, 40, 0.8);
+      background: rgba(40, 40, 40, 0.9) !important;
+    }
+    
+    .tech-category {
+      background: rgba(255, 255, 255, 0.1) !important;
     }
     
     .tech-category h4 {
-      color: #e8e8e8;
-      border-bottom-color: #555;
+      color: #e8e8e8 !important;
+      border-bottom-color: #555 !important;
     }
     
     .tech-category ul {
-      color: #bbb;
+      color: #cccccc !important;
+    }
+    
+    .tech-category li {
+      color: #cccccc !important;
+    }
+    
+    .tech-category li strong {
+      color: #ffffff !important;
+    }
+    
+    .tech-category li:hover {
+      color: #64b5f6 !important;
+    }
+    
+    /* 섹션 제목 다크모드 */
+    h2 {
+      color: #e8e8e8 !important;
     }
     
     /* 자격증 카드 다크모드 색상 */
     .cert-card:nth-child(1) {
-      background-color: rgba(255, 243, 205, 0.15) !important;
+      background-color: rgba(255, 243, 205, 0.2) !important;
       color: #ffd54f !important;
       border-left-color: #ffc107 !important;
     }
     
+    .cert-card:nth-child(1) h4 {
+      color: #ffd54f !important;
+    }
+    
+    .cert-card:nth-child(1) p {
+      color: #ffecb3 !important;
+    }
+    
     .cert-card:nth-child(2) {
-      background-color: rgba(212, 237, 218, 0.15) !important;
+      background-color: rgba(212, 237, 218, 0.2) !important;
       color: #81c784 !important;
       border-left-color: #28a745 !important;
     }
     
+    .cert-card:nth-child(2) h4 {
+      color: #81c784 !important;
+    }
+    
+    .cert-card:nth-child(2) p {
+      color: #c8e6c9 !important;
+    }
+    
     .cert-card:nth-child(3) {
-      background-color: rgba(204, 229, 255, 0.15) !important;
+      background-color: rgba(204, 229, 255, 0.2) !important;
       color: #64b5f6 !important;
       border-left-color: #007bff !important;
     }
     
+    .cert-card:nth-child(3) h4 {
+      color: #64b5f6 !important;
+    }
+    
+    .cert-card:nth-child(3) p {
+      color: #bbdefb !important;
+    }
+    
     .cert-card:nth-child(4) {
-      background-color: rgba(248, 215, 218, 0.15) !important;
+      background-color: rgba(248, 215, 218, 0.2) !important;
       color: #f48fb1 !important;
       border-left-color: #dc3545 !important;
+    }
+    
+    .cert-card:nth-child(4) h4 {
+      color: #f48fb1 !important;
+    }
+    
+    .cert-card:nth-child(4) p {
+      color: #f8bbd9 !important;
     }
   }
 </style>

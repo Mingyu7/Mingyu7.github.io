@@ -1,0 +1,110 @@
+/* 포트폴리오 이미지 공간 스타일 */
+.portfolio-image-placeholder {
+  text-align: center; 
+  margin: 20px 0;
+}
+
+.portfolio-image-container {
+  width: 100%; 
+  max-width: 600px; 
+  height: 300px; 
+  margin: 0 auto; 
+  border: 2px dashed #ccc; 
+  border-radius: 15px; 
+  background: linear-gradient(135deg, 
+    rgba(248, 249, 250, 0.8) 0%, 
+    rgba(248, 249, 250, 0.9) 100%);
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  color: #666;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-image-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  border-color: #3498db;
+}
+
+.portfolio-image-container::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg, 
+    transparent, 
+    rgba(102, 126, 234, 0.1), 
+    transparent
+  );
+  animation: shimmer 3s infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.portfolio-image-container:hover::before {
+  opacity: 1;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+}
+
+.portfolio-image-text {
+  text-align: center;
+  z-index: 1;
+}
+
+.portfolio-image-text p:first-child {
+  font-size: 1.2em; 
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.portfolio-image-text p:last-child {
+  font-size: 0.9em; 
+  color: #999;
+  margin: 5px 0;
+  opacity: 0.8;
+}
+
+/* 다크모드 대응 */
+@media (prefers-color-scheme: dark) {
+  .portfolio-image-container {
+    background: linear-gradient(135deg, 
+      rgba(45, 45, 45, 0.8) 0%, 
+      rgba(55, 55, 55, 0.9) 100%);
+    border-color: #555 !important;
+    color: #ccc !important;
+  }
+  
+  .portfolio-image-container:hover {
+    border-color: #64b5f6 !important;
+  }
+  
+  .portfolio-image-text p:first-child {
+    color: #e8e8e8 !important;
+  }
+  
+  .portfolio-image-text p:last-child {
+    color: #aaa !important;
+  }
+  
+  .portfolio-image-container::before {
+    background: linear-gradient(
+      45deg, 
+      transparent, 
+      rgba(100, 181, 246, 0.15), 
+      transparent
+    );
+  }
+}

@@ -4,6 +4,15 @@ excerpt: "딥러닝을 활용한 이미지 분류 시스템 개발 프로젝트�
 collection: portfolio
 ---
 
+<div class="portfolio-image-placeholder">
+  <div class="portfolio-image-container">
+    <div class="portfolio-image-text">
+      <p>🖼️ 프로젝트 이미지</p>
+      <p>이미지를 추가해주세요</p>
+    </div>
+  </div>
+</div>
+
 ## 프로젝트 개요
 AI소프트웨어학과 전공 수업에서 진행한 딥러닝 기반 이미지 분류 프로젝트입니다. 
 

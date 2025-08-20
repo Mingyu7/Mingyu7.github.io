@@ -4,6 +4,15 @@ excerpt: "다양한 알고리즘 문제를 해결하고 성능을 최적화한 �
 collection: portfolio
 ---
 
+<div class="portfolio-image-placeholder">
+  <div class="portfolio-image-container">
+    <div class="portfolio-image-text">
+      <p>🖼️ 프로젝트 이미지</p>
+      <p>이미지를 추가해주세요</p>
+    </div>
+  </div>
+</div>
+
 ## 프로젝트 개요
 체계적인 알고리즘 학습과 문제 해결 능력 향상을 위한 개인 스터디 프로젝트입니다.
 

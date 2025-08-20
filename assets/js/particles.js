@@ -18,6 +18,10 @@ class ParticleSystem {
     this.canvas.style.left = '0';
     this.canvas.style.zIndex = '-1';
     this.canvas.style.pointerEvents = 'none';
+    // 파티클을 왼쪽 절반으로 제한
+    this.canvas.style.width = '50%';
+    this.canvas.style.height = '100%';
+    this.canvas.style.clipPath = 'inset(0 50% 0 0)'; // 오른쪽 50% 잘라냄
     document.body.insertBefore(this.canvas, document.body.firstChild);
     
     this.ctx = this.canvas.getContext('2d');
@@ -36,24 +40,25 @@ class ParticleSystem {
     // 스크롤 애니메이션 초기화
     this.initScrollAnimations();
     
-    // 마우스 트레일 효과
+    // 마우스 트레일 효과 (왼쪽만)
     this.initCursorTrail();
     
-    // 플로팅 셰이프 추가
+    // 플로팅 셰이프 추가 (왼쪽만)
     this.addFloatingShapes();
   }
 
   resize() {
-    this.canvas.width = window.innerWidth;
+    // 왼쪽 절반만 사용
+    this.canvas.width = window.innerWidth * 0.5;
     this.canvas.height = window.innerHeight;
   }
 
   createParticles() {
-    const particleCount = Math.min(100, Math.floor(window.innerWidth / 15));
+    const particleCount = Math.min(50, Math.floor(window.innerWidth / 30)); // 파티클 수 줄임
     
     for (let i = 0; i < particleCount; i++) {
       this.particles.push({
-        x: Math.random() * this.canvas.width,
+        x: Math.random() * this.canvas.width, // 이미 절반 크기로 제한됨
         y: Math.random() * this.canvas.height,
         vx: (Math.random() - 0.5) * 0.5,
         vy: (Math.random() - 0.5) * 0.5,

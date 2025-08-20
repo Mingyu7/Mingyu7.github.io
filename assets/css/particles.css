@@ -63,7 +63,7 @@
 .floating-shape:nth-child(3) {
   width: 100px;
   height: 100px;
-  left: 70%;
+  left: 35%;
   animation-delay: 10s;
   animation-duration: 20s;
 }
@@ -71,7 +71,7 @@
 .floating-shape:nth-child(4) {
   width: 40px;
   height: 40px;
-  left: 85%;
+  left: 45%;
   animation-delay: 15s;
   animation-duration: 35s;
 }
@@ -79,9 +79,15 @@
 .floating-shape:nth-child(5) {
   width: 70px;
   height: 70px;
-  left: 50%;
+  left: 30%;
   animation-delay: 8s;
   animation-duration: 28s;
+}
+
+/* 플로팅 셰이프를 왼쪽 50%로 제한 */
+.floating-shapes {
+  width: 50%;
+  clip-path: inset(0 50% 0 0);
 }
 
 @keyframes float {
