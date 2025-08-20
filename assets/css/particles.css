@@ -1,0 +1,202 @@
+/* 파티클 효과 CSS */
+#particles-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(135deg, 
+    rgba(102, 126, 234, 0.1) 0%, 
+    rgba(118, 75, 162, 0.1) 50%, 
+    rgba(52, 152, 219, 0.1) 100%);
+}
+
+/* 다크모드 배경 그라데이션 */
+@media (prefers-color-scheme: dark) {
+  #particles-canvas {
+    background: linear-gradient(135deg, 
+      rgba(102, 126, 234, 0.05) 0%, 
+      rgba(118, 75, 162, 0.05) 50%, 
+      rgba(52, 152, 219, 0.05) 100%);
+  }
+}
+
+/* 추가 시각적 효과 */
+.floating-shapes {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  background: linear-gradient(45deg, 
+    rgba(102, 126, 234, 0.1), 
+    rgba(118, 75, 162, 0.1));
+  animation: float 20s infinite linear;
+}
+
+.floating-shape:nth-child(1) {
+  width: 80px;
+  height: 80px;
+  left: 10%;
+  animation-delay: 0s;
+  animation-duration: 25s;
+}
+
+.floating-shape:nth-child(2) {
+  width: 60px;
+  height: 60px;
+  left: 20%;
+  animation-delay: 5s;
+  animation-duration: 30s;
+}
+
+.floating-shape:nth-child(3) {
+  width: 100px;
+  height: 100px;
+  left: 70%;
+  animation-delay: 10s;
+  animation-duration: 20s;
+}
+
+.floating-shape:nth-child(4) {
+  width: 40px;
+  height: 40px;
+  left: 85%;
+  animation-delay: 15s;
+  animation-duration: 35s;
+}
+
+.floating-shape:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  left: 50%;
+  animation-delay: 8s;
+  animation-duration: 28s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(100vh) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* 글로우 효과 */
+.glow-effect {
+  position: relative;
+}
+
+.glow-effect::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: linear-gradient(45deg, 
+    rgba(102, 126, 234, 0.3), 
+    rgba(118, 75, 162, 0.3), 
+    rgba(52, 152, 219, 0.3));
+  z-index: -1;
+  filter: blur(10px);
+  border-radius: inherit;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glow-effect:hover::before {
+  opacity: 1;
+}
+
+/* 반짝이는 효과 */
+@keyframes sparkle {
+  0%, 100% { opacity: 0; transform: scale(0); }
+  50% { opacity: 1; transform: scale(1); }
+}
+
+.sparkle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  animation: sparkle 2s infinite;
+}
+
+/* 마우스 따라다니는 효과 */
+.cursor-trail {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, 
+    rgba(102, 126, 234, 0.6) 0%, 
+    rgba(102, 126, 234, 0) 70%);
+  pointer-events: none;
+  z-index: 9999;
+  transition: all 0.1s ease;
+}
+
+/* 섹션별 애니메이션 */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 호버 효과 강화 */
+.enhanced-hover {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.enhanced-hover::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: radial-gradient(circle, 
+    rgba(255, 255, 255, 0.2) 0%, 
+    transparent 70%);
+  transition: all 0.4s ease;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.enhanced-hover:hover::after {
+  width: 300px;
+  height: 300px;
+}
+
+.enhanced-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
