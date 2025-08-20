@@ -19,7 +19,7 @@ redirect_from:
   .hero-title {
     font-size: 2.5em; 
     margin-bottom: 10px;
-    color: var(--text-color, #2c3e50);
+    color: #2c3e50 !important;
     text-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
     transition: all 0.3s ease;
   }
@@ -27,7 +27,7 @@ redirect_from:
   .hero-subtitle {
     font-size: 1.8em; 
     margin-bottom: 20px;
-    color: var(--link-color, #3498db);
+    color: #3498db !important;
     text-shadow: 0 0 15px rgba(52, 152, 219, 0.3);
   }
   
@@ -51,7 +51,7 @@ redirect_from:
     background: rgba(248, 249, 250, 0.8); 
     padding: 25px; 
     border-radius: 15px; 
-    border-left: 5px solid var(--link-color, #3498db); 
+    border-left: 5px solid #3498db; 
     margin: 25px 0;
     backdrop-filter: blur(15px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
@@ -61,14 +61,18 @@ redirect_from:
   }
   
   .intro-section h3 {
-    color: var(--text-color, #2c3e50); 
+    color: #2c3e50 !important; 
     margin-top: 0;
   }
   
   .intro-section p {
     font-size: 1.1em; 
     line-height: 1.8;
-    color: var(--text-color, #2c3e50);
+    color: #2c3e50 !important;
+  }
+  
+  .intro-section strong {
+    color: #1a252f !important;
   }
   
   /* 학력 정보 스타일 - 파티클 효과와 조화 */
@@ -92,11 +96,15 @@ redirect_from:
   .education-section li {
     margin: 15px 0; 
     font-size: 1.1em;
-    color: var(--text-color, #2c3e50);
+    color: #2c3e50 !important;
     padding: 10px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
+  }
+  
+  .education-section li strong {
+    color: #1a252f !important;
   }
   
   .education-section li:hover {
@@ -171,25 +179,35 @@ redirect_from:
   }
   
   .tech-category h4 {
-    color: var(--text-color, #495057); 
-    border-bottom: 2px solid var(--border-color, #dee2e6); 
+    color: #495057 !important; 
+    border-bottom: 2px solid #dee2e6; 
     padding-bottom: 8px;
     margin-bottom: 15px;
   }
   
   .tech-category ul {
-    color: var(--text-muted, #6c757d);
+    color: #6c757d !important;
     margin: 0;
   }
   
   .tech-category li {
     margin: 8px 0;
     transition: all 0.2s ease;
+    color: #6c757d !important;
+  }
+  
+  .tech-category li strong {
+    color: #495057 !important;
   }
   
   .tech-category li:hover {
-    color: var(--link-color, #3498db);
+    color: #3498db !important;
     transform: translateX(3px);
+  }
+  
+  /* 섹션 제목 라이트 모드 */
+  h2 {
+    color: #2c3e50 !important;
   }
   
   /* 다크모드 전용 스타일 */

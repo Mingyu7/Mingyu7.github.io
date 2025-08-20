@@ -18,10 +18,9 @@ class ParticleSystem {
     this.canvas.style.left = '0';
     this.canvas.style.zIndex = '-1';
     this.canvas.style.pointerEvents = 'none';
-    // 파티클을 왼쪽 절반으로 제한
-    this.canvas.style.width = '50%';
+    // 파티클을 왼쪽 세로 띠로 제한 (더 두껍게)
+    this.canvas.style.width = '300px'; // 고정 너비 300px로 두껍게
     this.canvas.style.height = '100%';
-    this.canvas.style.clipPath = 'inset(0 50% 0 0)'; // 오른쪽 50% 잘라냄
     document.body.insertBefore(this.canvas, document.body.firstChild);
     
     this.ctx = this.canvas.getContext('2d');
@@ -48,22 +47,22 @@ class ParticleSystem {
   }
 
   resize() {
-    // 왼쪽 절반만 사용
-    this.canvas.width = window.innerWidth * 0.5;
+    // 고정 너비 300px, 전체 높이
+    this.canvas.width = 300;
     this.canvas.height = window.innerHeight;
   }
 
   createParticles() {
-    const particleCount = Math.min(50, Math.floor(window.innerWidth / 30)); // 파티클 수 줄임
+    const particleCount = 80; // 더 많은 파티클로 조밀하게
     
     for (let i = 0; i < particleCount; i++) {
       this.particles.push({
-        x: Math.random() * this.canvas.width, // 이미 절반 크기로 제한됨
+        x: Math.random() * 300, // 300px 너비 내에서
         y: Math.random() * this.canvas.height,
-        vx: (Math.random() - 0.5) * 0.5,
-        vy: (Math.random() - 0.5) * 0.5,
-        size: Math.random() * 3 + 1,
-        opacity: Math.random() * 0.5 + 0.2,
+        vx: (Math.random() - 0.5) * 0.3,
+        vy: (Math.random() - 0.5) * 0.3,
+        size: Math.random() * 4 + 2, // 조금 더 크게
+        opacity: Math.random() * 0.7 + 0.3,
         color: this.getRandomColor(),
         originalSize: 0,
         pulse: Math.random() * Math.PI * 2
@@ -147,10 +146,10 @@ class ParticleSystem {
       particle.vx *= 0.99;
       particle.vy *= 0.99;
       
-      // 경계 처리
-      if (particle.x < 0 || particle.x > this.canvas.width) {
+      // 경계 처리 (300px 너비 내에서)
+      if (particle.x < 0 || particle.x > 300) {
         particle.vx = -particle.vx;
-        particle.x = Math.max(0, Math.min(this.canvas.width, particle.x));
+        particle.x = Math.max(0, Math.min(300, particle.x));
       }
       if (particle.y < 0 || particle.y > this.canvas.height) {
         particle.vy = -particle.vy;
