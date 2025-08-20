@@ -32,11 +32,11 @@ redirect_from:
   }
   
   .hero-badge {
-    color: #333; 
+    color: #e2e8f0; 
     padding: 20px; 
     border-radius: 15px; 
     margin: 20px 0;
-    border: 2px solid #3498db;
+    border: 2px solid #4facfe;
   }
   
   .hero-badge p {
@@ -47,9 +47,9 @@ redirect_from:
   .intro-section {
     padding: 25px; 
     border-radius: 15px; 
-    border-left: 5px solid #3498db; 
+    border-left: 5px solid #4facfe; 
     margin: 25px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #394049;
     position: relative;
     z-index: 1;
   }
@@ -74,7 +74,7 @@ redirect_from:
     padding: 25px; 
     border-radius: 15px; 
     margin: 20px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #394049;
     position: relative;
     z-index: 1;
   }
@@ -100,7 +100,7 @@ redirect_from:
   
   .education-section li:hover {
     transform: translateX(5px);
-    border-left: 3px solid #3498db;
+    border-left: 3px solid #4facfe;
   }
   
   /* 자격증 카드 스타일 - 파티클 효과와 조화 */
@@ -115,7 +115,7 @@ redirect_from:
     padding: 20px; 
     border-radius: 15px; 
     border-left: 4px solid;
-    border: 1px solid #ddd;
+    border: 1px solid #394049;
     transition: all 0.3s ease;
     position: relative;
     z-index: 1;
@@ -145,7 +145,7 @@ redirect_from:
     padding: 30px; 
     border-radius: 15px; 
     margin: 25px 0;
-    border: 1px solid #ddd;
+    border: 1px solid #394049;
     position: relative;
     z-index: 1;
   }
@@ -442,27 +442,27 @@ redirect_from:
 
 ## 🚀 핵심 역량
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 25px 0;">
-  <div style="color: #333; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #667eea;">
+  <div style="color: #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #667eea;">
     <h4 style="margin: 0 0 15px 0; font-size: 1.3em; color: #667eea;">🎯 성실함과 끈기</h4>
     <p style="margin: 0;">게으르지 않고 꾸준히 학습하며 평균학점 4.3으로 증명된 성실성</p>
   </div>
-  <div style="color: #333; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #f093fb;">
+  <div style="color: #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #f093fb;">
     <h4 style="margin: 0 0 15px 0; font-size: 1.3em; color: #f093fb;">🧠 문제 해결 능력</h4>
     <p style="margin: 0;">복잡한 문제를 논리적으로 분석하고 300+ 알고리즘 문제 해결</p>
   </div>
-  <div style="color: #333; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #4facfe;">
+  <div style="color: #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #4facfe;">
     <h4 style="margin: 0 0 15px 0; font-size: 1.3em; color: #4facfe;">📚 지속적 학습</h4>
     <p style="margin: 0;">새로운 기술 습득에 대한 열정과 트렌드 기술 학습</p>
   </div>
-  <div style="color: #333; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #fa709a;">
+  <div style="color: #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #fa709a;">
     <h4 style="margin: 0 0 15px 0; font-size: 1.3em; color: #fa709a;">🤝 협업과 실무</h4>
     <p style="margin: 0;">이론을 실제 프로젝트에 적용하고 팀워크를 통한 성과 달성</p>
   </div>
 </div>
 
-<div style="text-align: center; margin: 40px 0; padding: 30px; color: #333; border-radius: 15px; border: 3px solid #667eea;">
+<div style="text-align: center; margin: 40px 0; padding: 30px; color: #e2e8f0; border-radius: 15px; border: 3px solid #667eea;">
   <h3 style="margin: 0 0 15px 0; font-size: 1.5em; color: #667eea;">💫 나의 목표</h3>
-  <p style="font-size: 1.2em; margin: 0; color: #555;">
+  <p style="font-size: 1.2em; margin: 0; color: #a0aec0;">
     <em>"성실함과 끊임없는 학습으로 가치 있는 소프트웨어를 만들어가겠습니다!"</em>
   </p>
 </div>

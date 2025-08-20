@@ -1,8 +1,8 @@
-/* 전체 사이트 텍스트 가독성 개선 */
+/* 전체 사이트 다크 테마 적용 */
 
-/* 라이트 모드에서 모든 제목을 검은색으로 */
+/* 모든 제목을 밝은색으로 */
 h1, h2, h3, h4, h5, h6 {
-  color: #1a1a1a !important;
+  color: #e8e8e8 !important;
 }
 
 /* 특정 컨테이너 내 제목들 강제 적용 */
@@ -24,50 +24,14 @@ main h3,
 main h4,
 main h5,
 main h6 {
-  color: #1a1a1a !important;
+  color: #e8e8e8 !important;
 }
 
-/* 본문 텍스트도 명확하게 */
+/* 본문 텍스트도 밝게 */
 .page__content,
 article,
 main p,
 main li,
 main span {
-  color: #2c3e50 !important;
-}
-
-/* 다크모드에서는 모든 텍스트 밝게 */
-@media (prefers-color-scheme: dark) {
-  h1, h2, h3, h4, h5, h6 {
-    color: #e8e8e8 !important;
-  }
-  
-  .page__content h1,
-  .page__content h2,
-  .page__content h3,
-  .page__content h4,
-  .page__content h5,
-  .page__content h6,
-  article h1,
-  article h2,
-  article h3,
-  article h4,
-  article h5,
-  article h6,
-  main h1,
-  main h2,
-  main h3,
-  main h4,
-  main h5,
-  main h6 {
-    color: #e8e8e8 !important;
-  }
-  
-  .page__content,
-  article,
-  main p,
-  main li,
-  main span {
-    color: #e8e8e8 !important;
-  }
+  color: #e8e8e8 !important;
 }
