@@ -210,8 +210,16 @@ redirect_from:
     transform: translateX(3px);
   }
   
-  /* 섹션 제목 라이트 모드 */
-  h2 {
+  /* 모든 제목들 라이트 모드에서 검은색 */
+  h1, h2, h3, h4, h5, h6 {
+    color: #1a1a1a !important;
+  }
+  
+  /* 특별히 소제목들 강제 적용 */
+  .page__content h2,
+  article h2,
+  main h2,
+  body h2 {
     color: #1a1a1a !important;
   }
   
@@ -288,8 +296,15 @@ redirect_from:
       color: #64b5f6 !important;
     }
     
-    /* 섹션 제목 다크모드 */
-    h2 {
+    /* 다크모드에서는 모든 제목 밝게 */
+    h1, h2, h3, h4, h5, h6 {
+      color: #e8e8e8 !important;
+    }
+    
+    .page__content h2,
+    article h2,
+    main h2,
+    body h2 {
       color: #e8e8e8 !important;
     }
     
