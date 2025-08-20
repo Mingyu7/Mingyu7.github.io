@@ -96,17 +96,17 @@ a:hover {
   }
 }
 
-/* 상단바 항상 흰색 배경 */
+/* 상단바 투명 배경, 흰색 글자 */
 .masthead {
-  background: #ffffff !important;
-  border-bottom: 1px solid #e2e8f0 !important;
+  background: transparent !important;
+  border-bottom: none !important;
 }
 
 .masthead a {
-  color: #1a202c !important;
+  color: #ffffff !important;
   font-weight: 500 !important;
 }
 
 .masthead a:hover {
-  color: #0066cc !important;
+  color: #60a5fa !important;
 }
