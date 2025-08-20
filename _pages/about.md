@@ -32,7 +32,7 @@ redirect_from:
   }
   
   .hero-badge {
-    color: #e2e8f0; 
+    color: #ffffff; 
     padding: 20px; 
     border-radius: 15px; 
     margin: 20px 0;
@@ -169,43 +169,30 @@ redirect_from:
   }
   
   .tech-category h4 {
-    color: #495057 !important; 
-    border-bottom: 2px solid #dee2e6; 
+    color: #ffffff !important; 
+    border-bottom: 2px solid #4facfe; 
     padding-bottom: 8px;
     margin-bottom: 15px;
   }
   
   .tech-category ul {
-    color: #6c757d !important;
+    color: #f0f0f0 !important;
     margin: 0;
   }
   
   .tech-category li {
     margin: 8px 0;
     transition: all 0.2s ease;
-    color: #6c757d !important;
+    color: #f0f0f0 !important;
   }
   
   .tech-category li strong {
-    color: #495057 !important;
+    color: #ffffff !important;
   }
   
   .tech-category li:hover {
-    color: #3498db !important;
+    color: #4facfe !important;
     transform: translateX(3px);
-  }
-  
-  /* 모든 제목들 라이트 모드에서 검은색 */
-  h1, h2, h3, h4, h5, h6 {
-    color: #1a1a1a !important;
-  }
-  
-  /* 특별히 소제목들 강제 적용 */
-  .page__content h2,
-  article h2,
-  main h2,
-  body h2 {
-    color: #1a1a1a !important;
   }
   
   /* 다크모드 전용 스타일 */
@@ -383,19 +370,19 @@ redirect_from:
 
 ## 🏅 취득 자격증
 <div class="cert-grid">
-  <div class="cert-card" style="background-color: #fff3cd; color: #856404; border-left-color: #ffc107;">
+  <div class="cert-card" style="color: #ffd54f; border-left-color: #ffc107;">
     <h4>💼 정보처리기사</h4>
     <p>시스템 개발 및 소프트웨어 엔지니어링 전문성</p>
   </div>
-  <div class="cert-card" style="background-color: #d4edda; color: #155724; border-left-color: #28a745;">
+  <div class="cert-card" style="color: #81c784; border-left-color: #28a745;">
     <h4>📊 컴퓨터활용능력 2급</h4>
     <p>데이터 처리 및 분석 역량</p>
   </div>
-  <div class="cert-card" style="background-color: #cce5ff; color: #004085; border-left-color: #007bff;">
+  <div class="cert-card" style="color: #64b5f6; border-left-color: #007bff;">
     <h4>⚙️ 정보처리기능사</h4>
     <p>프로그래밍 및 시스템 운영 기초</p>
   </div>
-  <div class="cert-card" style="background-color: #f8d7da; color: #721c24; border-left-color: #dc3545;">
+  <div class="cert-card" style="color: #e57373; border-left-color: #dc3545;">
     <h4>📝 워드프로세서</h4>
     <p>문서 작성 및 편집 능력</p>
   </div>
@@ -442,27 +429,27 @@ redirect_from:
 
 ## 🚀 핵심 역량
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 25px 0;">
-  <div style="color: #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #667eea;">
+  <div style="color: #ffffff; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #667eea;">
     <h4 style="margin: 0 0 15px 0; font-size: 1.3em; color: #667eea;">🎯 성실함과 끈기</h4>
     <p style="margin: 0;">게으르지 않고 꾸준히 학습하며 평균학점 4.3으로 증명된 성실성</p>
   </div>
-  <div style="color: #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #f093fb;">
+  <div style="color: #ffffff; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #f093fb;">
     <h4 style="margin: 0 0 15px 0; font-size: 1.3em; color: #f093fb;">🧠 문제 해결 능력</h4>
     <p style="margin: 0;">복잡한 문제를 논리적으로 분석하고 300+ 알고리즘 문제 해결</p>
   </div>
-  <div style="color: #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #4facfe;">
+  <div style="color: #ffffff; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #4facfe;">
     <h4 style="margin: 0 0 15px 0; font-size: 1.3em; color: #4facfe;">📚 지속적 학습</h4>
     <p style="margin: 0;">새로운 기술 습득에 대한 열정과 트렌드 기술 학습</p>
   </div>
-  <div style="color: #e2e8f0; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #fa709a;">
+  <div style="color: #ffffff; padding: 20px; border-radius: 12px; text-align: center; border: 2px solid #fa709a;">
     <h4 style="margin: 0 0 15px 0; font-size: 1.3em; color: #fa709a;">🤝 협업과 실무</h4>
     <p style="margin: 0;">이론을 실제 프로젝트에 적용하고 팀워크를 통한 성과 달성</p>
   </div>
 </div>
 
-<div style="text-align: center; margin: 40px 0; padding: 30px; color: #e2e8f0; border-radius: 15px; border: 3px solid #667eea;">
+<div style="text-align: center; margin: 40px 0; padding: 30px; color: #ffffff; border-radius: 15px; border: 3px solid #667eea;">
   <h3 style="margin: 0 0 15px 0; font-size: 1.5em; color: #667eea;">💫 나의 목표</h3>
-  <p style="font-size: 1.2em; margin: 0; color: #a0aec0;">
+  <p style="font-size: 1.2em; margin: 0; color: #f0f0f0;">
     <em>"성실함과 끊임없는 학습으로 가치 있는 소프트웨어를 만들어가겠습니다!"</em>
   </p>
 </div>

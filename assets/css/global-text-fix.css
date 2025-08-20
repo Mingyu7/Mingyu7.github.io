@@ -1,8 +1,9 @@
 /* 전체 사이트 다크 테마 적용 */
 
-/* 모든 제목을 밝은색으로 */
+/* 모든 제목을 매우 밝은색으로 */
 h1, h2, h3, h4, h5, h6 {
-  color: #e8e8e8 !important;
+  color: #ffffff !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3) !important;
 }
 
 /* 특정 컨테이너 내 제목들 강제 적용 */
@@ -24,14 +25,25 @@ main h3,
 main h4,
 main h5,
 main h6 {
-  color: #e8e8e8 !important;
+  color: #ffffff !important;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3) !important;
 }
 
-/* 본문 텍스트도 밝게 */
+/* 본문 텍스트도 매우 밝게 */
 .page__content,
 article,
 main p,
 main li,
 main span {
-  color: #e8e8e8 !important;
+  color: #f0f0f0 !important;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2) !important;
+}
+
+/* 링크 색상도 밝게 */
+a {
+  color: #4facfe !important;
+}
+
+a:hover {
+  color: #00f2fe !important;
 }
