@@ -7,23 +7,9 @@
   height: calc(100vh - 80px);
   z-index: 10;
   pointer-events: none;
-  background: linear-gradient(135deg, 
-    rgba(102, 126, 234, 0.15) 0%, 
-    rgba(118, 75, 162, 0.15) 50%, 
-    rgba(52, 152, 219, 0.15) 100%);
-  box-shadow: inset -20px 0 40px rgba(102, 126, 234, 0.1);
 }
 
-/* 다크모드 배경 그라데이션 */
-@media (prefers-color-scheme: dark) {
-  #particles-canvas {
-    background: linear-gradient(135deg, 
-      rgba(102, 126, 234, 0.08) 0%, 
-      rgba(118, 75, 162, 0.08) 50%, 
-      rgba(52, 152, 219, 0.08) 100%);
-    box-shadow: inset -20px 0 40px rgba(102, 126, 234, 0.05);
-  }
-}
+/* 다크모드에서도 배경 없음 */
 
 /* 추가 시각적 효과 */
 .floating-shapes {

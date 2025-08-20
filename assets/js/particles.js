@@ -118,9 +118,6 @@ class ParticleSystem {
   animate() {
     this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
     
-    // 배경 그라데이션
-    this.drawBackground();
-    
     // 파티클 업데이트 및 그리기
     this.updateParticles();
     this.drawParticles();
@@ -129,23 +126,6 @@ class ParticleSystem {
     requestAnimationFrame(() => this.animate());
   }
 
-  drawBackground() {
-    const gradient = this.ctx.createLinearGradient(0, 0, this.canvas.width, this.canvas.height);
-    
-    if (this.isDarkMode) {
-      gradient.addColorStop(0, 'rgba(102, 126, 234, 0.03)');
-      gradient.addColorStop(0.5, 'rgba(118, 75, 162, 0.03)');
-      gradient.addColorStop(1, 'rgba(52, 152, 219, 0.03)');
-    } else {
-      gradient.addColorStop(0, 'rgba(63, 81, 181, 0.08)');
-      gradient.addColorStop(0.3, 'rgba(156, 39, 176, 0.08)');
-      gradient.addColorStop(0.6, 'rgba(33, 150, 243, 0.08)');
-      gradient.addColorStop(1, 'rgba(0, 150, 136, 0.08)');
-    }
-    
-    this.ctx.fillStyle = gradient;
-    this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-  }
 
   updateParticles() {
     this.particles.forEach((particle, index) => {
