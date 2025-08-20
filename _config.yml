@@ -12,7 +12,7 @@ site_theme               : "default" # Currently available options are "default"
 title                    : "이민규 | 개발 포트폴리오"
 title_separator          : "-"
 name                     : &name "이민규"
-description              : &description "컴퓨터 공학도 이민규의 학습 및 개발 기록입니다."
+description              : &description "AI소프트웨어학과 4학년 이민규의 포트폴리오입니다. 성실함과 끊임없는 학습으로 성장하는 개발자입니다."
 url                      : "https://Mingyu7.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Mingyu7/Mingyu7.github.io"
@@ -25,11 +25,11 @@ author:
   avatar           : "profile.png"
   name             : "이민규 (Mingyu Lee)"
   pronouns         : # example: "she/her"  
-  bio              : "새로운 기술을 배우고 적용하는 것을 즐기는 컴퓨터 공학도입니다."
+  bio              : "AI소프트웨어학과 4학년 • 평균학점 4.3 • 성실함으로 성장하는 개발자"
   location         : "Asan, South Korea"
-  employer         : "유원대학교"
+  employer         : "유원대학교 AI소프트웨어학과"
   uri              : # URL
-  email            : "vkans7526@naver.com" 
+  email            : "sin77770@gmail.com" 
 
   # Academic websites
   academia         : # URL

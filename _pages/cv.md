@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "이력서 (CV)"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -9,56 +9,84 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+기본 정보
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **이름**: 이민규 (Mingyu Lee)
+* **전공**: AI소프트웨어학과 4학년
+* **학교**: 유원대학교
+* **평균학점**: 4.3/4.5
+* **연락처**: 010-7526-9475
+* **이메일**: sin77770@gmail.com
+* **GitHub**: [https://github.com/Mingyu7](https://github.com/Mingyu7)
 
-Work experience
+학력 사항
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **유원대학교 AI소프트웨어학과** (2021.03 - 2025.02 예정)
+  * 평균학점: 4.3/4.5
+  * 성실한 학업 태도로 우수한 성적 유지
+  * AI 및 소프트웨어 개발 전문 지식 습득
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+자격증 및 인증
+======
+* **정보처리기사** (2024, 한국산업인력공단)
+  * 시스템 개발 및 소프트웨어 엔지니어링 전문성
+* **컴퓨터활용능력 2급** (2023, 대한상공회의소)
+  * 데이터 처리 및 분석 역량
+* **정보처리기능사** (2022, 한국산업인력공단)
+  * 프로그래밍 및 시스템 운영 기초
+* **워드프로세서** (2021, 대한상공회의소)
+  * 문서 작성 및 편집 능력
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
+기술 스택
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Programming Languages**
+  * Python - AI/ML 프로젝트, 데이터 분석
+  * Java - 웹 개발, 객체지향 프로그래밍
+  * C/C++ - 알고리즘, 시스템 프로그래밍
+  * SQL - 데이터베이스 설계 및 관리
+* **Web Technologies**
+  * Frontend: HTML5, CSS3, JavaScript
+  * Backend: Spring Framework
+  * Database: MySQL
+* **AI/ML & Data**
+  * Frameworks: TensorFlow, Keras
+  * Libraries: NumPy, Pandas, Matplotlib
+  * Computer Vision: OpenCV
 
-Publications
+주요 프로젝트
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
+* **AI 기반 이미지 분류 시스템** (2024)
+  * 기술스택: Python, TensorFlow, OpenCV
+  * 성과: 92% 이상의 정확도 달성
+  * 역할: 모델 설계 및 최적화 담당
+
+* **웹 기반 학습 관리 시스템** (2023)
+  * 기술스택: Java, Spring, MySQL, HTML/CSS/JS
+  * 성과: 팀 프로젝트 최우수상 수상
+  * 역할: 팀 리더, 데이터베이스 설계 담당
+
+* **알고리즘 문제 해결 프로젝트** (2022-현재)
+  * 플랫폼: 백준, 프로그래머스
+  * 성과: 300+ 문제 해결
+  * 언어: C++, Python
+
+핵심 역량
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
+* **성실함과 끈기**
+  * 게으르지 않고 꾸준히 학습하는 자세
+  * 평균학점 4.3 유지로 증명된 성실성
+* **문제 해결 능력**
+  * 복잡한 문제를 논리적으로 분석하고 해결
+  * 300+ 알고리즘 문제 해결 경험
+* **협업 및 리더십**
+  * 팀 프로젝트에서 리더 역할 수행
+  * 효과적인 의사소통과 일정 관리 능력
+* **지속적 학습**
+  * 새로운 기술 습득에 대한 열정
+  * 이론과 실무를 균형있게 발전
+
+향후 목표
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* **단기**: AI/ML 분야 전문성 강화 및 실무 경험 축적
+* **중기**: 풀스택 개발자로서의 역량 완성
+* **장기**: AI 기술을 활용한 혁신적인 서비스 개발
