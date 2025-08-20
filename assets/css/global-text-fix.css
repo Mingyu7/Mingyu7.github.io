@@ -1,12 +1,12 @@
-/* 전체 사이트 다크 테마 적용 */
+/* 전체 사이트 라이트/다크 모드 대응 */
 
-/* 모든 제목을 매우 밝은색으로 */
+/* 라이트 모드 - 어두운 글자와 강한 대비 */
 h1, h2, h3, h4, h5, h6 {
-  color: #ffffff !important;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3) !important;
+  color: #1a202c !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  font-weight: 700 !important;
 }
 
-/* 특정 컨테이너 내 제목들 강제 적용 */
 .page__content h1,
 .page__content h2,
 .page__content h3,
@@ -25,25 +25,80 @@ main h3,
 main h4,
 main h5,
 main h6 {
-  color: #ffffff !important;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3) !important;
+  color: #1a202c !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1) !important;
+  font-weight: 700 !important;
 }
 
-/* 본문 텍스트도 매우 밝게 */
 .page__content,
 article,
 main p,
 main li,
 main span {
-  color: #f0f0f0 !important;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2) !important;
+  color: #2d3748 !important;
+  font-weight: 500 !important;
 }
 
-/* 링크 색상도 밝게 */
+/* 링크 색상 - 라이트 모드 */
 a {
-  color: #00d4ff !important;
+  color: #0066cc !important;
+  font-weight: 600 !important;
 }
 
 a:hover {
-  color: #10b981 !important;
+  color: #004499 !important;
+}
+
+/* 다크 모드 - 밝은 글자와 글로우 효과 */
+@media (prefers-color-scheme: dark) {
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.4), 0 0 30px rgba(0, 212, 255, 0.2) !important;
+    font-weight: 800 !important;
+  }
+
+  .page__content h1,
+  .page__content h2,
+  .page__content h3,
+  .page__content h4,
+  .page__content h5,
+  .page__content h6,
+  article h1,
+  article h2,
+  article h3,
+  article h4,
+  article h5,
+  article h6,
+  main h1,
+  main h2,
+  main h3,
+  main h4,
+  main h5,
+  main h6 {
+    color: #ffffff !important;
+    text-shadow: 0 0 15px rgba(0, 212, 255, 0.4), 0 0 30px rgba(0, 212, 255, 0.2) !important;
+    font-weight: 800 !important;
+  }
+
+  .page__content,
+  article,
+  main p,
+  main li,
+  main span {
+    color: #e2e8f0 !important;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.1) !important;
+    font-weight: 500 !important;
+  }
+
+  /* 다크모드 링크 색상 */
+  a {
+    color: #00d4ff !important;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.3) !important;
+    font-weight: 600 !important;
+  }
+
+  a:hover {
+    color: #10b981 !important;
+    text-shadow: 0 0 15px rgba(16, 185, 129, 0.4) !important;
+  }
 }

@@ -26,8 +26,29 @@ $navicon-height             : 4px;
 $sidebar-link-max-width     : 250px;
 $sidebar-screen-min-width   : 1024px;
 
-/* Default dark theme for the site */
+/* Default light theme for the site */
 :root {
+    --global-base-color                 : #718096;
+    --global-bg-color                   : transparent;
+    --global-footer-bg-color            : #f7fafc;
+    --global-border-color               : #e2e8f0;
+    --global-dark-border-color          : #cbd5e0;
+    --global-code-background-color      : #f7fafc;
+    --global-code-text-color            : #2d3748;
+    --global-fig-caption-color          : #4a5568;
+    --global-link-color                 : #0066cc;
+    --global-link-color-hover           : #004499;
+    --global-link-color-visited         : #553c9a;
+    --global-masthead-link-color        : #2d3748;
+    --global-masthead-link-color-hover  : #1a202c;
+    --global-text-color                 : #2d3748;
+    --global-text-color-light           : #4a5568;
+    --global-thead-color                : #a0aec0;
+}
+
+/* Dark theme overrides */
+@media (prefers-color-scheme: dark) {
+  :root {
     --global-base-color                 : #252a34;
     --global-bg-color                   : transparent;
     --global-footer-bg-color            : #252a34;
@@ -44,4 +65,5 @@ $sidebar-screen-min-width   : 1024px;
     --global-text-color                 : #e2e8f0;
     --global-text-color-light           : #a0aec0;
     --global-thead-color                : #4a5568;
+  }
 }

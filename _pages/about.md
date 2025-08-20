@@ -217,6 +217,160 @@ redirect_from:
     transform: translateX(3px);
   }
   
+  /* 라이트 모드 스타일 */
+  @media (prefers-color-scheme: light) {
+    body {
+      background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%) !important;
+    }
+    
+    .hero-badge {
+      border-color: #0066cc !important;
+      background: rgba(0, 102, 204, 0.1) !important;
+      color: #1a202c !important;
+      box-shadow: 0 0 20px rgba(0, 102, 204, 0.2) !important;
+    }
+    
+    .intro-section, .education-section, .tech-section {
+      border-color: #0066cc !important;
+      background: rgba(0, 102, 204, 0.05) !important;
+      box-shadow: 0 0 20px rgba(0, 102, 204, 0.1) !important;
+    }
+    
+    .tech-category {
+      border-color: #553c9a !important;
+      background: rgba(85, 60, 154, 0.05) !important;
+      box-shadow: 0 4px 15px rgba(85, 60, 154, 0.1) !important;
+    }
+    
+    .tech-category:hover {
+      border-color: #0066cc !important;
+      background: rgba(0, 102, 204, 0.08) !important;
+      box-shadow: 0 8px 25px rgba(0, 102, 204, 0.2) !important;
+    }
+    
+    .cert-card {
+      border-color: #553c9a !important;
+      background: rgba(85, 60, 154, 0.03) !important;
+      box-shadow: 0 4px 15px rgba(85, 60, 154, 0.1) !important;
+    }
+    
+    .cert-card:hover {
+      background: rgba(85, 60, 154, 0.06) !important;
+      box-shadow: 0 8px 25px rgba(85, 60, 154, 0.2) !important;
+    }
+    
+    .tech-category h4 {
+      color: #1a202c !important;
+      border-bottom-color: #0066cc !important;
+    }
+    
+    .tech-category ul, .tech-category li {
+      color: #2d3748 !important;
+    }
+    
+    .tech-category li strong {
+      color: #1a202c !important;
+    }
+    
+    .tech-category li:hover {
+      color: #0066cc !important;
+    }
+    
+    /* 라이트모드 핵심 역량 카드 색상 */
+    .core-skill:nth-child(1) {
+      border-color: #0066cc !important;
+      background: rgba(0, 102, 204, 0.05) !important;
+      box-shadow: 0 4px 20px rgba(0, 102, 204, 0.15) !important;
+    }
+    
+    .core-skill:nth-child(1) h4 {
+      color: #0066cc !important;
+      text-shadow: none !important;
+    }
+    
+    .core-skill:nth-child(2) {
+      border-color: #d53f8c !important;
+      background: rgba(213, 63, 140, 0.05) !important;
+      box-shadow: 0 4px 20px rgba(213, 63, 140, 0.15) !important;
+    }
+    
+    .core-skill:nth-child(2) h4 {
+      color: #d53f8c !important;
+      text-shadow: none !important;
+    }
+    
+    .core-skill:nth-child(3) {
+      border-color: #553c9a !important;
+      background: rgba(85, 60, 154, 0.05) !important;
+      box-shadow: 0 4px 20px rgba(85, 60, 154, 0.15) !important;
+    }
+    
+    .core-skill:nth-child(3) h4 {
+      color: #553c9a !important;
+      text-shadow: none !important;
+    }
+    
+    .core-skill:nth-child(4) {
+      border-color: #38a169 !important;
+      background: rgba(56, 161, 105, 0.05) !important;
+      box-shadow: 0 4px 20px rgba(56, 161, 105, 0.15) !important;
+    }
+    
+    .core-skill:nth-child(4) h4 {
+      color: #38a169 !important;
+      text-shadow: none !important;
+    }
+    
+    .core-skill {
+      color: #2d3748 !important;
+    }
+    
+    .core-skill p {
+      color: #4a5568 !important;
+    }
+    
+    /* 라이트모드 자격증 카드 색상 */
+    .cert-card:nth-child(1) {
+      color: #b7791f !important;
+      border-left-color: #d69e2e !important;
+    }
+    
+    .cert-card:nth-child(1) h4 {
+      color: #b7791f !important;
+    }
+    
+    .cert-card:nth-child(2) {
+      color: #2f855a !important;
+      border-left-color: #38a169 !important;
+    }
+    
+    .cert-card:nth-child(2) h4 {
+      color: #2f855a !important;
+    }
+    
+    .cert-card:nth-child(3) {
+      color: #553c9a !important;
+      border-left-color: #6b46c1 !important;
+    }
+    
+    .cert-card:nth-child(3) h4 {
+      color: #553c9a !important;
+    }
+    
+    .cert-card:nth-child(4) {
+      color: #c53030 !important;
+      border-left-color: #e53e3e !important;
+    }
+    
+    .cert-card:nth-child(4) h4 {
+      color: #c53030 !important;
+    }
+    
+    .cert-card p {
+      color: #4a5568 !important;
+    }
+  }
+  
   /* 다크모드 전용 스타일 */
   @media (prefers-color-scheme: dark) {
     .hero-title {
